@@ -101,56 +101,117 @@
         </section>
 
         <!-- VISION & VIDÉO -->
-        <section id="vision" class="vision-section section-diagonale">
+        <!-- SECTION : VISION & VIDÉO (Premium Card Design) -->
+        <section id="vision" class="vision-section">
             <div class="container">
-                <div class="vision-grid">
-                    <div class="vision-text reveal-from-left">
-                        <blockquote>
-                            <p class="h3 fw-light text-secondary">
-                                "Plus d'un pense que le déclin continu de notre pays est inévitable et que le pire est à venir. Les fondateurs du parti EN AVANT osent prétendre autrement. Un nouveau leadership politique, moderne et avant-gardiste, peut conduire Haïti sur la voie du progrès..."
-                            </p>
-                        </blockquote>
-                    </div>
-                    <div class="vision-video reveal-from-right">
-                        <div class="vision-video-wrapper">
-                            <!-- CODE CORRIGÉ : L'URL de la vidéo est réparée -->
-                            <iframe 
-                                src="https://www.youtube.com/embed/DyB86KKDdCI?autoplay=1&mute=1&loop=1&playlist=DyB86KKDdCI&controls=0&showinfo=0&rel=0&modestbranding=1" 
-                                title="Vidéo En Avant" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                
+                <!-- L'ÉCRIN PREMIUM : La carte géante asymétrique -->
+                <div class="vision-premium-card reveal-hidden">
+                    <div class="vision-grid">
+                        
+                        <!-- La Citation Majestueuse -->
+                        <div class="vision-text">
+                            <span class="quote-mark">“</span>
+                            <blockquote>
+                                <p class="vision-quote">
+                                    Plus d'un pense que le déclin continu de notre pays est inévitable et que le pire est à venir. Les fondateurs du parti EN AVANT osent prétendre autrement. Un nouveau leadership politique, moderne et avant-gardiste, peut conduire Haïti sur la voie du progrès...
+                                </p>
+                            </blockquote>
+                            <div class="vision-author mt-4">
+                                <strong class="text-primary">Mouvement En Avant</strong>
+                                <span class="d-block text-muted">Manifeste Fondateur</span>
+                            </div>
                         </div>
+
+                        <!-- La Vidéo (Déborde de la carte) -->
+                        <div class="vision-video">
+                            <div class="vision-video-wrapper">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/DyB86KKDdCI?rel=0&modestbranding=1" 
+                                    title="Vidéo En Avant" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
+                
             </div>
         </section>
 
         <!-- ACTUALITÉS -->
-        <section id="actualites" class="news-section bg-light">
+        <!-- SECTION : ACTUALITÉS (Blog Vitrine Premium) -->
+        <section id="actualites" class="news-section">
             <div class="container">
-                <h2 class="section-title text-center text-primary reveal-hidden">À LA UNE</h2>
-                <div class="blog-layout mt-5">
-                    <article class="card card-featured reveal-from-left">
-                        <div class="image-zoom-container">
-                            <img src="pictures/une-press.jpg" alt="Communiqué" class="image-zoom-target" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <span class="badge text-primary">Communiqué de Presse</span>
-                            <h3 class="card-title mt-2">Le parti En Avant annonce ses 20 chantiers prioritaires</h3>
-                            <p class="card-text editorial-content mt-3">Découvrez les mesures phares proposées par notre équipe...</p>
-                            <a href="article-details.html" class="btn btn-white mt-4" style="border: 1px solid #eee;">Lire la suite</a>
-                        </div>
+                
+                <div class="section-header d-flex justify-content-between align-items-center mb-5 reveal-hidden">
+                    <h2 class="section-title text-secondary m-0">Actualités</h2>
+                    <a href="blog.html" class="link-discover text-primary">Voir tout le blog <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="blog-layout">
+                    
+                    <!-- L'Article Majeur (Image Pleine avec Overlay) -->
+                    <article class="news-featured reveal-from-left">
+                        <a href="article-details.html" class="featured-link">
+                            <img src="pictures/hero.jpeg" alt="Communiqué" class="featured-img" loading="lazy">
+                            <div class="featured-overlay">
+                                <div class="featured-content">
+                                    <span class="badge-premium">Communiqué de Presse</span>
+                                    <h3 class="featured-title">Le parti En Avant annonce ses 20 chantiers prioritaires pour la jeunesse</h3>
+                                    <span class="featured-read-more">Lire l'article <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
                     </article>
-                    <aside class="news-sidebar reveal-from-right">
-                        <h3 class="sidebar-title mb-4">Dernières actualités</h3>
-                        <ul class="news-list">
-                            <li class="news-item card mb-4"><a href="#" class="d-block p-4"><h4 class="news-item-title text-secondary">Rencontre avec la diaspora à Boston</h4><span class="news-date text-muted">12 Mars 2026</span></a></li>
-                            <li class="news-item card mb-4"><a href="#" class="d-block p-4"><h4 class="news-item-title text-secondary">Lancement de la campagne</h4><span class="news-date text-muted">10 Mars 2026</span></a></li>
-                            <li class="news-item-more mt-4 text-center"><a href="blog.html" class="btn btn-white" style="border: 1px solid #eee;">Voir tous les articles →</a></li>
+
+                    <!-- La Liste Épurée (Style iOS) avec Thumbnails au survol -->
+                    <aside class="news-list-container reveal-from-right">
+                        <ul class="news-list-clean">
+                            
+                            <!-- Article Liste 1 -->
+                            <li class="news-list-item">
+                                <a href="#" class="news-item-link">
+                                    <div class="news-item-meta">
+                                        <span class="news-category text-primary">Diaspora</span>
+                                        <span class="news-date">12 Mars 2026</span>
+                                    </div>
+                                    <h4 class="news-item-title">Rencontre historique avec la diaspora haïtienne à Boston</h4>
+                                    <!-- L'image cachée qui apparaîtra au survol -->
+                                    <img src="pictures/galerie-1.jpg" alt="Miniature" class="hover-thumbnail">
+                                </a>
+                            </li>
+
+                            <!-- Article Liste 2 -->
+                            <li class="news-list-item">
+                                <a href="#" class="news-item-link">
+                                    <div class="news-item-meta">
+                                        <span class="news-category text-primary">Campagne</span>
+                                        <span class="news-date">10 Mars 2026</span>
+                                    </div>
+                                    <h4 class="news-item-title">Lancement officiel de la grande campagne de recrutement nationale</h4>
+                                    <img src="pictures/galerie-2.jpg" alt="Miniature" class="hover-thumbnail">
+                                </a>
+                            </li>
+                            
+                            <!-- Article Liste 3 -->
+                            <li class="news-list-item">
+                                <a href="#" class="news-item-link">
+                                    <div class="news-item-meta">
+                                        <span class="news-category text-primary">Sécurité</span>
+                                        <span class="news-date">05 Mars 2026</span>
+                                    </div>
+                                    <h4 class="news-item-title">Nouvelle proposition de loi pour restaurer la sécurité dans les quartiers</h4>
+                                    <img src="pictures/galerie-3.jpg" alt="Miniature" class="hover-thumbnail">
+                                </a>
+                            </li>
+
                         </ul>
                     </aside>
+                    
                 </div>
             </div>
         </section>
@@ -315,6 +376,21 @@
                 slides[currentSlide].classList.add('active');
             }, 5000); 
         }
+// 6. LE HACK VIDÉO (Injecte YouTube avec le son au clic)
+        const videoFacades = document.querySelectorAll('.video-facade');
+        
+        videoFacades.forEach(facade => {
+            facade.addEventListener('click', function() {
+                const videoId = this.getAttribute('data-youtube-id');
+                const playerSlot = this.querySelector('#youtube-player-slot');
+                
+                // L'astuce : On demande 'autoplay=1' (démarre tout de suite) 
+                // Mais comme l'utilisateur vient de CLIQUER, le navigateur autorise le son !
+                const iframeHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                
+                playerSlot.innerHTML = iframeHTML;
+            });
+        });
     </script>
 </body>
 </html>
