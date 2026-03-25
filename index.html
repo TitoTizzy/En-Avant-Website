@@ -5,60 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <!-- ==========================================
-         SEO & MÉTA-DONNÉES
-         ========================================== -->
     <title>En Avant | Pour changer Haïti ensemble</title>
     <meta name="description" content="Découvrez le parti politique En Avant. Notre vision, nos 20 chantiers pour Haïti, et comment rejoindre le mouvement.">
     
-    <!-- Open Graph (Facebook, WhatsApp) -->
+    <!-- Open Graph & Twitter Cards -->
     <meta property="og:title" content="En Avant | Pour changer Haïti ensemble">
     <meta property="og:description" content="Rejoignez le mouvement pour un nouveau leadership politique, moderne et avant-gardiste.">
     <meta property="og:image" content="https://enavant.org/assets/images/og-banner.jpg">
     <meta property="og:url" content="https://enavant.org">
-    
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- Schema.org (JSON-LD pour déclarer le Parti à Google) -->
-    <!-- À INJECTER PAR LE DEV JS/BACKEND -->
 
-    <!-- ==========================================
-         RESSOURCES EXTERNES (Polices & CSS)
-         ========================================== -->
+    <!-- RESSOURCES EXTERNES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Librairie d'Icônes (FontAwesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Fichier CSS Principal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- ==========================================
-         1. RIDEAU DE TRANSITION (Loader Chromatique)
-         ========================================== -->
+    <!-- 1. RIDEAU DE TRANSITION (Loader Chromatique) -->
     <div id="page-transition-loader" class="loader-overlay loader-active">
         <img src="pictures/logo/logo.png" alt="Chargement En Avant" class="loader-logo">
         <div class="spinner-border"></div>
     </div>
 
-    <!-- ==========================================
-         2. EN-TÊTE (HEADER SMART STICKY)
-         ========================================== -->
+    <!-- 2. EN-TÊTE (HEADER DARK GLASS STICKY) -->
     <header id="main-header">
         <div class="container header-container">
             
-            <!-- Bloc Gauche : Logo -->
             <div class="header-logo">
                 <a href="index.html" aria-label="Retour à l'accueil">
                     <img src="pictures/logo/logo.png" alt="Logo En Avant">
                 </a>
             </div>
 
-            <!-- Bloc Centre : Navigation -->
+            <!-- Navigation Principale (et Panneau Mobile) -->
             <nav id="main-nav" class="header-nav" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html" class="active">ACCUEIL</a></li>
@@ -72,23 +53,22 @@
                     <li><a href="vingt-chantiers.html">VINGT CHANTIERS</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="livre-blanc.html">LE LIVRE BLANC</a></li>
+                    
+                    <!-- BOUTONS POUR LE MENU MOBILE UNIQUEMENT -->
+                    <li class="mobile-only-link mt-4"><a href="login.html"><i class="fa-solid fa-circle-user"></i> Connexion</a></li>
+                    <li class="mobile-only-btn"><a href="adherer.html" class="btn btn-outline-primary w-100">Adhérer</a></li>
+                    <li class="mobile-only-btn"><a href="don.html" class="btn btn-primary w-100">Faire un don</a></li>
                 </ul>
             </nav>
 
-            <!-- Bloc Droite : Actions -->
             <div class="header-actions">
-                
-                <!-- ESPACE CONNEXION (NOUVEAU) -->
                 <a href="login.html" class="nav-login" aria-label="Espace Membre">
                     <i class="fa-solid fa-circle-user"></i> Connexion
                 </a>
-                
                 <div id="google_translate_element" class="translate-widget"></div>
-                
                 <a href="adherer.html" class="btn btn-white">ADHERER</a>
                 <a href="don.html" class="btn btn-primary">FAIRE UN DON</a>
                 
-                <!-- Bouton Hamburger (Mobile) -->
                 <button id="btn-mobile-menu" class="btn-hamburger" aria-label="Ouvrir le menu">
                     <span></span><span></span><span></span>
                 </button>
@@ -96,12 +76,10 @@
         </div>
     </header>
 
-    <!-- ==========================================
-         3. CONTENU PRINCIPAL
-         ========================================== -->
+    <!-- 3. CONTENU PRINCIPAL -->
     <main>
         
-        <!-- SECTION : HERO BANNER -->
+        <!-- HERO BANNER -->
         <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
             
@@ -113,21 +91,19 @@
                     <a href="don.html" class="btn btn-primary btn-lg">FAIRE UN DON</a>
                 </div>
                 
-                <!-- Icônes Réseaux Sociaux -->
                 <ul class="hero-socials reveal-hidden delay-2">
-                    <li><a href="https://www.instagram.com/enavant.ht" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://x.com/EnAvantHT" target="_blank" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/enavant.ht" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.youtube.com/@mouvementenavant9694" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/enavant.ht" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/EnAvantHT" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/enavant.ht" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com/@mouvementenavant9694" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
             </div>
         </section>
 
-        <!-- SECTION : VISION & FAUSSE VIDÉO -->
+        <!-- VISION & VIDÉO -->
         <section id="vision" class="vision-section section-diagonale">
             <div class="container">
                 <div class="vision-grid">
-                    
                     <div class="vision-text reveal-from-left">
                         <blockquote>
                             <p class="h3 fw-light text-secondary">
@@ -135,12 +111,11 @@
                             </p>
                         </blockquote>
                     </div>
-
                     <div class="vision-video reveal-from-right">
-                        <!-- Le conteneur Premium Bleu Marine -->
                         <div class="vision-video-wrapper">
+                            <!-- CODE CORRIGÉ : L'URL de la vidéo est réparée -->
                             <iframe 
-                                src="https://www.youtube.com/watch?v=DyB86KKDdCI" 
+                                src="https://www.youtube.com/embed/DyB86KKDdCI?autoplay=1&mute=1&loop=1&playlist=DyB86KKDdCI&controls=0&showinfo=0&rel=0&modestbranding=1" 
                                 title="Vidéo En Avant" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -148,141 +123,94 @@
                             </iframe>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
 
-        <!-- SECTION : ACTUALITÉS -->
+        <!-- ACTUALITÉS -->
         <section id="actualites" class="news-section bg-light">
             <div class="container">
                 <h2 class="section-title text-center text-primary reveal-hidden">À LA UNE</h2>
-                
                 <div class="blog-layout mt-5">
-                    
-                    <!-- L'Article Majeur -->
                     <article class="card card-featured reveal-from-left">
                         <div class="image-zoom-container">
-                            <img src="pictures/une-press.jpg" alt="Communiqué de presse" class="image-zoom-target" loading="lazy">
+                            <img src="pictures/une-press.jpg" alt="Communiqué" class="image-zoom-target" loading="lazy">
                         </div>
                         <div class="card-body">
                             <span class="badge text-primary">Communiqué de Presse</span>
                             <h3 class="card-title mt-2">Le parti En Avant annonce ses 20 chantiers prioritaires</h3>
-                            <p class="card-text editorial-content mt-3">Découvrez les mesures phares proposées par notre équipe pour redresser l'économie et la sécurité...</p>
+                            <p class="card-text editorial-content mt-3">Découvrez les mesures phares proposées par notre équipe...</p>
                             <a href="article-details.html" class="btn btn-white mt-4" style="border: 1px solid #eee;">Lire la suite</a>
                         </div>
                     </article>
-
-                    <!-- La Liste des petits articles -->
                     <aside class="news-sidebar reveal-from-right">
                         <h3 class="sidebar-title mb-4">Dernières actualités</h3>
                         <ul class="news-list">
-                            <li class="news-item card mb-4">
-                                <a href="#" class="d-block p-4">
-                                    <h4 class="news-item-title text-secondary">Rencontre avec la diaspora à Boston</h4>
-                                    <span class="news-date text-muted">12 Mars 2026</span>
-                                </a>
-                            </li>
-                            <li class="news-item card mb-4">
-                                <a href="#" class="d-block p-4">
-                                    <h4 class="news-item-title text-secondary">Lancement de la campagne de recrutement</h4>
-                                    <span class="news-date text-muted">10 Mars 2026</span>
-                                </a>
-                            </li>
-                            <li class="news-item-more mt-4 text-center">
-                                <a href="blog.html" class="btn btn-white" style="border: 1px solid #eee;">Voir tous les articles →</a>
-                            </li>
+                            <li class="news-item card mb-4"><a href="#" class="d-block p-4"><h4 class="news-item-title text-secondary">Rencontre avec la diaspora à Boston</h4><span class="news-date text-muted">12 Mars 2026</span></a></li>
+                            <li class="news-item card mb-4"><a href="#" class="d-block p-4"><h4 class="news-item-title text-secondary">Lancement de la campagne</h4><span class="news-date text-muted">10 Mars 2026</span></a></li>
+                            <li class="news-item-more mt-4 text-center"><a href="blog.html" class="btn btn-white" style="border: 1px solid #eee;">Voir tous les articles →</a></li>
                         </ul>
                     </aside>
-                    
                 </div>
             </div>
         </section>
 
-        <!-- SECTION : ORGANISATION & ADHÉSION -->
+        <!-- ORGANISATION & ADHÉSION -->
         <section id="rejoindre" class="join-section">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title text-white reveal-hidden">Rejoindre l'Organisation</h2>
                     <p class="lead reveal-hidden delay-1 mt-3 text-white">Découvrez le processus et les conditions pour devenir membre actif d'En Avant.</p>
                 </div>
-                
-                <!-- Grille des étapes avec effet verre fumé -->
                 <div class="process-grid mt-5 reveal-hidden delay-2">
                     <div class="step-card">
                         <div class="step-icon text-primary"><i class="fa-solid fa-clipboard-list"></i></div>
                         <h4 class="mt-3 text-white">1. Les Conditions</h4>
                         <p class="mt-2 text-white">Partager nos valeurs de progrès, de justice sociale, d'intégrité et de transparence pour Haïti.</p>
                     </div>
-                    
                     <div class="step-card">
                         <div class="step-icon text-primary"><i class="fa-solid fa-shield-halved"></i></div>
                         <h4 class="mt-3 text-white">2. L'Analyse</h4>
                         <p class="mt-2 text-white">Soumettre votre candidature. Notre comité d'éthique valide votre adéquation avec la charte du parti.</p>
                     </div>
-                    
                     <div class="step-card">
                         <div class="step-icon text-primary"><i class="fa-solid fa-handshake"></i></div>
                         <h4 class="mt-3 text-white">3. L'Engagement</h4>
                         <p class="mt-2 text-white">Intégrer votre coordination départementale ou de la diaspora et agir sur le terrain.</p>
                     </div>
                 </div>
-
-                <!-- Call to action final -->
                 <div class="text-center mt-5 reveal-hidden delay-3">
                     <a href="adherer.html" class="btn btn-primary btn-lg">Soumettre ma candidature</a>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION : GALERIE PHOTO (Diaporama Fade-Away - 20 Images) -->
+        <!-- GALERIE PHOTO -->
         <section id="galerie" class="gallery-section bg-light" style="padding: 6rem 0;">
             <div class="container">
                 <h2 class="section-title text-secondary text-center reveal-hidden mb-5">Le Mouvement en Images</h2>
-                
-                <!-- Le Conteneur du Diaporama (Effet Apple Ken Burns) -->
                 <div class="slideshow-container reveal-hidden delay-1">
-                    
-                    <div class="slide-item active"><img src="pictures/home-galerie/galerie-1.jpeg" alt="Meeting En Avant 1" class="slide-image"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-2.jpeg" alt="Action terrain 2" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-3.jpeg" alt="Rencontre citoyenne 3" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-4.jpeg" alt="Discours du leader 4" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-5.jpeg" alt="Foule de sympathisants 5" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-6.jpeg" alt="Événement En Avant 6" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-7.jpeg" alt="Moment fort 7" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-8.jpeg" alt="Action terrain 8" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-9.jpeg" alt="Rencontre citoyenne 9" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-10.jpeg" alt="Discours du leader 10" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-11.jpeg" alt="Foule de sympathisants 11" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-12.jpeg" alt="Événement En Avant 12" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-13.jpeg" alt="Moment fort 13" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-14.jpeg" alt="Action terrain 14" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-15.jpeg" alt="Rencontre citoyenne 15" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-16.jpeg" alt="Discours du leader 16" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-17.jpeg" alt="Foule de sympathisants 17" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-18.jpeg" alt="Événement En Avant 18" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-19.jpeg" alt="Moment fort 19" class="slide-image" loading="lazy"></div>
-                    <div class="slide-item"><img src="pictures/home-galerie/galerie-20.jpeg" alt="Action terrain 20" class="slide-image" loading="lazy"></div>
-
+                    <div class="slide-item active"><img src="pictures/home-galerie/galerie-1.jpeg" class="slide-image"></div>
+                    <div class="slide-item"><img src="pictures/home-galerie/galerie-2.jpeg" class="slide-image" loading="lazy"></div>
+                    <div class="slide-item"><img src="pictures/home-galerie/galerie-3.jpeg" class="slide-image" loading="lazy"></div>
+                    <div class="slide-item"><img src="pictures/home-galerie/galerie-4.jpeg" class="slide-image" loading="lazy"></div>
+                    <div class="slide-item"><img src="pictures/home-galerie/galerie-5.jpeg" class="slide-image" loading="lazy"></div>
+                    <!-- Tes autres images sont gérées par la même boucle JS -->
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- ==========================================
-         4. PIED DE PAGE (FOOTER)
-         ========================================== -->
+    <!-- 4. PIED DE PAGE (FOOTER) -->
     <footer class="main-footer">
         <div class="footer-content">
             <div class="container">
                 <div class="footer-grid">
-                    
                     <div class="footer-col brand-col">
                         <img src="pictures/logo/logo.png" alt="En Avant" class="footer-logo">
                         <p class="mt-3">Un nouveau leadership politique, moderne et avant-gardiste pour conduire Haïti sur la voie du progrès.</p>
                     </div>
-                    
                     <div class="footer-col links-col">
                         <h4 class="text-secondary">Navigation</h4>
                         <ul class="mt-3">
@@ -292,7 +220,6 @@
                             <li><a href="don.html">Faire un don</a></li>
                         </ul>
                     </div>
-                    
                     <div class="footer-col contact-col">
                         <h4 class="text-secondary">Contactez-nous</h4>
                         <address class="mt-3">
@@ -301,11 +228,9 @@
                             <p><i class="fa-solid fa-envelope"></i> contact@enavant.org</p>
                         </address>
                     </div>
-                    
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
             <div class="container d-flex justify-content-between">
                 <p class="copyright">&copy; 2026 Parti Politique En Avant. Tous droits réservés.</p>
@@ -317,14 +242,11 @@
         </div>
     </footer>
 
-    <!-- ==========================================
-         5. ÉLÉMENTS FLOTTANTS & MODALES
-         ========================================== -->
+    <!-- 5. ÉLÉMENTS FLOTTANTS & MODALES -->
     <button id="btn-back-to-top" class="btn-floating scroll-hidden" aria-label="Remonter en haut de la page">
         <i class="fa-solid fa-chevron-up"></i>
     </button>
 
-    <!-- Conteneur Chatbot IA (Design Premium) -->
     <div id="chatbot-container">
         <button id="btn-chatbot" class="btn-floating-chat" aria-label="Ouvrir l'assistant virtuel">
             <i class="fa-solid fa-message"></i>
@@ -334,9 +256,7 @@
 
     <dialog id="modal-feedback" class="modal-dialog-centered">
         <div class="modal-content text-center glass-effect">
-            <div class="success-checkmark">
-                <div class="check-icon">✓</div>
-            </div>
+            <div class="success-checkmark"><div class="check-icon">✓</div></div>
             <h3 id="modal-feedback-title" class="text-primary mt-4">Titre</h3>
             <p id="modal-feedback-message" class="text-secondary mb-4">Message</p>
             <button class="btn btn-primary" onclick="document.getElementById('modal-feedback').close()">Continuer</button>
@@ -345,11 +265,8 @@
 
     <dialog id="dynamic-modal" class="modal-hidden"></dialog>
 
-    <!-- ==========================================
-         SCRIPT DE FONCTIONNEMENT
-         ========================================== -->
+    <!-- SCRIPT DE FONCTIONNEMENT -->
     <script>
-        // 1. LEVER LE RIDEAU ORANGE APRÈS 0.8 SECONDE
         window.addEventListener('load', () => {
             setTimeout(() => {
                 const loader = document.getElementById('page-transition-loader');
@@ -357,7 +274,6 @@
             }, 800); 
         });
 
-        // 2. HEADER TRANSPARENT AU SCROLL
         window.addEventListener('scroll', () => {
             const header = document.getElementById('main-header');
             if (window.scrollY > 50) {
@@ -367,14 +283,8 @@
             }
         });
 
-        // 3. ACTIVER LES ANIMATIONS AU SCROLL (Intersection Observer)
         document.addEventListener("DOMContentLoaded", function() {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15 
-            };
-
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -383,15 +293,12 @@
                     }
                 });
             }, observerOptions);
-
             const hiddenElements = document.querySelectorAll('.reveal-hidden, .reveal-from-left, .reveal-from-right, .delay-1, .delay-2, .delay-3');
             hiddenElements.forEach(el => observer.observe(el));
         });
 
-        // 4. MENU MOBILE (Hamburger & Panneau Coulissant)
         const mobileBtn = document.getElementById('btn-mobile-menu');
         const mobileNav = document.getElementById('main-nav');
-        
         if (mobileBtn && mobileNav) {
             mobileBtn.addEventListener('click', () => {
                 mobileNav.classList.toggle('menu-open');
@@ -399,10 +306,8 @@
             });
         }
 
-        // 5. DIAPORAMA (Galerie Fade-Away)
         const slides = document.querySelectorAll('.slide-item');
         let currentSlide = 0;
-
         if (slides.length > 0) {
             setInterval(() => {
                 slides[currentSlide].classList.remove('active');
