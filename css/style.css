@@ -1951,3 +1951,78 @@ blockquote {
     backdrop-filter: blur(6px);
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 7.2rem;
+    padding-bottom: 3rem;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+
+  .hero-copy {
+    order: 1;
+    position: relative;
+    z-index: 3;
+  }
+
+  .hero-card,
+  .hero-card-scroll {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    transform: none !important;
+    align-self: stretch;
+  }
+
+  .hero-card-scroll {
+    min-height: unset;
+  }
+
+  .hero-card {
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  .hero-card-marquee {
+    height: 160px;
+    margin-bottom: 1rem;
+  }
+
+  .hero-card h2 {
+    font-size: 1.35rem;
+    line-height: 1.2;
+    max-width: none;
+  }
+
+  .hero-card p,
+  .hero-card-marquee p {
+    font-size: 0.96rem;
+    line-height: 1.65;
+  }
+
+  .hero-card-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;
+  }
+
+  .hero-card-stats div {
+    padding: 0.8rem 0.5rem;
+    border-radius: 14px;
+  }
+
+  .hero-card-stats strong {
+    font-size: 1.2rem;
+  }
+
+  .hero-card-stats span {
+    font-size: 0.8rem;
+  }
+}
