@@ -1878,7 +1878,7 @@ blockquote {
   #home-vision-strip h2 {
     font-size: 1.4rem;
   }
-  
+
 #vision h2 {
   max-width: 800px
 }
@@ -1904,3 +1904,99 @@ blockquote {
   .hero-card-stats span {
     font-size: 0.75rem;
   }
+  
+/* ============================= */
+/* FIX GLOBAL MOBILE */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* Empêche les débordements */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Tous les containers prennent toute la largeur */
+  .container,
+  .section,
+  .wrapper {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* ============================= */
+  /* CARTES (grid → colonne) */
+  /* ============================= */
+  .cards,
+  .grid,
+  .features,
+  .blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Chaque carte prend toute la largeur */
+  .card,
+  .feature-card,
+  .blog-card {
+    width: 100%;
+  }
+
+  /* ============================= */
+  /* TEXTES */
+  /* ============================= */
+  h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* FIX TEXTE QUI SE CASSE (très important) */
+  .text,
+  .content,
+  .description {
+    max-width: 100%;
+    word-break: break-word;
+  }
+
+  /* ============================= */
+  /* SECTION VISION */
+  /* ============================= */
+  .vision-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  /* ============================= */
+  /* IMAGES */
+  /* ============================= */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ============================= */
+  /*  BOUTONS */
+  /* ============================= */
+  .btn,
+  button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ============================= */
+  /*  NAVBAR (optionnel si bug) */
+  /* ============================= */
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
