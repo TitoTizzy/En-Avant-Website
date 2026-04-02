@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Meta de base -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- SEO -->
   <title>En Avant | Pour changer Haïti ensemble</title>
   <meta
     name="description"
     content="Découvrez le parti politique En Avant. Notre vision, nos 20 chantiers pour Haïti, et comment rejoindre le parti."
   />
 
+  <!-- Open Graph -->
   <meta property="og:title" content="En Avant | Pour changer Haïti ensemble" />
   <meta
     property="og:description"
@@ -20,6 +23,7 @@
   <meta property="og:url" content="https://enavant.org" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Fonts / icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -30,6 +34,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -93,7 +99,7 @@
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- Hero principal -->
     <section id="hero" class="hero">
       <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
@@ -101,10 +107,12 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal-up">
           <span class="eyebrow">Un nouveau leadership pour Haïti</span>
+
           <h1>
             Pour changer <span>Haïti</span><br />
             ensemble.
           </h1>
+
           <p class="hero-text">
             En Avant porte une vision moderne, intègre et ambitieuse pour construire
             un pays plus juste, plus stable et plus fort.
@@ -117,33 +125,44 @@
 
           <ul class="hero-socials" aria-label="Réseaux sociaux">
             <li>
-              <a href="https://www.instagram.com/enavant.ht" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/enavant.ht" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="https://x.com/EnAvantHT" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/EnAvantHT" target="_blank" rel="noopener noreferrer" aria-label="X">
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/enavant.ht" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/enavant.ht" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/@mouvementenavant9694" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@mouvementenavant9694" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <i class="fa-brands fa-youtube"></i>
               </a>
             </li>
           </ul>
         </div>
+      </div>
 
-        <div class="hero-card hero-card-scroll reveal-up delay-1">
+      <a href="#home-vision-strip" class="hero-scroll" aria-label="Descendre vers la section suivante">
+        <span>Découvrir</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- Bloc vision juste après le hero -->
+    <section id="home-vision-strip" class="section section-light">
+      <div class="vision-strip-shell">
+        <div class="hero-card hero-card-scroll reveal-up full-width-vision-card">
           <div class="hero-card-top">
             <span class="hero-card-label">Vision</span>
             <span class="hero-card-pill">2026</span>
           </div>
+          <h2>Une parole claire, une  ambition assumée</h2>
 
           <div class="hero-card-marquee">
             <div class="hero-card-marquee-track">
@@ -161,6 +180,14 @@
 
               <p>
                 La jeunesse, la diaspora, les collectivités, les travailleurs, les entrepreneurs, les enseignants et les artistes ont tous un rôle à jouer dans cette reconstruction. Le pays a besoin d’une méthode, d’une volonté et d’un horizon partagé.
+              </p>
+
+              <p>
+                Haïti ne se relèvera ni par hasard, ni par improvisation. Le redressement national suppose une vision claire, une discipline collective, une exigence d’intégrité et une mobilisation durable des forces vives du pays.
+              </p>
+
+              <p>
+                Notre ambition n’est pas de commenter le déclin, mais de construire un cap. Sécurité, justice, production, jeunesse, institutions, territoires : chaque chantier doit répondre à une urgence réelle et s’inscrire dans une trajectoire cohérente.
               </p>
             </div>
           </div>
@@ -193,7 +220,7 @@
       <div class="container">
         <div class="section-head reveal-up">
           <span class="section-kicker">Notre vision</span>
-          <h2 class="section-title">Une parole claire, une ambition assumée</h2>
+          <h2 class="section-title">Une parole nette, une ambition portée</h2>
         </div>
 
         <div class="vision-grid">
@@ -208,19 +235,23 @@
 
           <div class="vision-media reveal-right">
             <div class="video-shell">
-              <iframe
-                src="https://www.youtube.com/embed/DyB86KKDdCI"
-                title="Vidéo En Avant"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/DyB86KKDdCI?si=s8EsloqAgnvdMZmQ" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+              </iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- News -->
+    <!-- Actualités -->
     <section id="actualites" class="section section-soft">
       <div class="container">
         <div class="section-head center reveal-up">
@@ -446,10 +477,12 @@
     </div>
   </footer>
 
+  <!-- Bouton retour en haut -->
   <button id="backToTop" class="back-to-top" aria-label="Remonter en haut">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
+  <!-- Bouton chatbot -->
   <button class="chatbot-fab" id="chatbotFab" aria-label="Ouvrir le chat">
     <span class="chatbot-icon">
       <svg viewBox="0 0 24 24" aria-hidden="true">
