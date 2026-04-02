@@ -411,9 +411,9 @@ blockquote {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("../pictures/hero.jpeg") center 22% / cover no-repeat;
-  filter: brightness(0.94);
-  transform: scale(1.02);
+  background: url("../pictures/hero.jpeg") center 35% / cover no-repeat;
+  filter: brightness(0.92);
+  transform: scale(0.98);
 }
 
 .hero-overlay {
@@ -1421,7 +1421,7 @@ blockquote {
 .about-hero-bg {
   position: absolute;
   inset: 0;
-  background: url("../pictures/about-hero.jpeg") center center / cover no-repeat;
+  background: url("../pictures/about-hero.jpeg") center center / contain no-repeat;
   filter: brightness(0.82);
   transform: scale(1.02);
 }
@@ -1885,9 +1885,11 @@ blockquote {
   }
 }
 
-@media (max-width: 768px) .hero-card-scroll {
-  overflow: hidden;
-  min-height: 320px;
+@media (max-width: 768px) {
+  .hero-card-scroll {
+    overflow: hidden;
+    min-height: 320px;
+  }
 }
 
 .hero-card-marquee {
@@ -1924,24 +1926,28 @@ blockquote {
   100% {
     transform: translateY(-45%);
   }
-}{
-  .chatbot-fab {
-    width: 60px;
-    height: 60px;
-    right: 18px;
-    bottom: 18px;
-  }
-
-  .chatbot-icon {
-    width: 26px;
-    height: 26px;
-  }
-
-  .chatbot-dot {
-    width: 12px;
-    height: 12px;
-    top: 8px;
-    right: 8px;
-  }
 }
 
+.chatbot-fab {
+  width: 60px;
+  height: 60px;
+  right: 18px;
+  bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0,0,0,0.35) 0%,
+      rgba(0,0,0,0.78) 100%
+    );
+  }
+
+  .hero-copy {
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+  }
+}
